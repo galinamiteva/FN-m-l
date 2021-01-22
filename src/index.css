@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color:rgb(171, 187, 150);
+	font-family: 'Lato', sans-serif;
+	width: 100wv;
+	height: 100wh;
+	margin: 0;
+}
+
+.show {
+	display: flex;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+	#goals {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#goals {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

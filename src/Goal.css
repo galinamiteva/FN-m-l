@@ -1,0 +1,45 @@
+
+.goal {
+	background-color:  rgb(241, 243, 240);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	min-height: 170px;
+	position: relative;
+}
+.goal p {
+	margin: 0;
+}
+.goal span {
+	color:  rgb(171, 187, 150);
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	font-family: 'Lora', serif;
+	font-size: 3rem;
+	text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
+}
+.goal button {
+	font-family: 'Lato', sans-serif;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	border: 2px solid  rgb(171, 187, 150);
+	background-color:  rgb(171, 187, 150);
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	outline: 0;
+	transition: 0.5s;
+}
+.goal button:hover {
+	cursor: pointer;
+	background-color:  rgb(241, 243, 240);
+	border: 2px solid  rgb(171, 187, 150);
+}
+
+
+#goals {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	margin: 10px;
+}
