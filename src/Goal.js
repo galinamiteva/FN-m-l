@@ -7,7 +7,7 @@ import './Goal.css';
 function Goal({goal, close}){
     const goalNumber=goal.code;    // Här jag vill hämta goalNumber från den andra API:n för att använda i fectchen ner, men kan inte !
    
-    const[dataGoals, setDataGoal] = useState([]);
+    const[dataGoals, setDataGoals] = useState([]);
     
     useEffect(async () => {
         const response = await fetch(`https://unstats.un.org/SDGAPI/v1/sdg/Goal/${goalNumber}/Target/List?includechildren=true`);
