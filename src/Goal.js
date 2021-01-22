@@ -13,7 +13,7 @@ function Goal({goal, close}){
         const response = await fetch(`https://unstats.un.org/SDGAPI/v1/sdg/Goal/${goalNumber}/Target/List?includechildren=true`);
         const data = await response.json();
         
-        setDataGoas(data);        
+        setDataGoals(data);        
         
                 
     }, []);
