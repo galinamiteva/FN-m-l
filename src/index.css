@@ -10,20 +10,3 @@ body {
 	margin: 0;
 }
 
-.show {
-	display: flex;
-}
-
-
-
-@media only screen and (max-width: 1000px) {
-	#goals {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	#goals {
-		grid-template-columns: repeat(1, 1fr);
-	}
-}
