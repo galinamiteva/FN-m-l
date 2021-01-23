@@ -41,7 +41,7 @@ function App(){
                 }): <Goal goal={page}  close={comeBack}/>
                 }
             </div>
-            <section class="error">
+            <section className="error">
                     <span>&#9888;</span>
                     <p>Loading</p>
                 </section>
