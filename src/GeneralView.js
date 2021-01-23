@@ -7,7 +7,7 @@ function GeneralView(props){
    }
     return ( 
             
-            <div className='goal'>
+            <div className='goal' key={props.index}>
                 <p>{props.goal.title}</p>
                 <span> {props.goal.code}</span>
                 <button data-code={props.goal.code} onClick={moreInfo}>Learn more</button>
