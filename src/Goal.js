@@ -16,7 +16,7 @@ function Goal(props){
                 <p className='summary'>{props.goal.description}</p>
                 {
                  props.goal.targets.map(target=>{
-                     return <p>{target.description}</p>
+                     return <p key={target.code}>{target.description}</p>
                  })   
                 }
             </article>

@@ -38,7 +38,7 @@ function App(){
                 {
                 page ===''? lists.map((list, index)=>{
                     return <GeneralView goal={list}   moreInfo={setPage} key={index}/>
-                }): <Goal goal={page}  close={comeBack}/>
+                }): <Goal goal={page}  close={comeBack} key={page.code}/>
                 }
             </div>
             <section className="error">
