@@ -19,6 +19,7 @@ function App(){
         }
         catch (error){
             console.log(error)
+            
             document.querySelector('.error').classList.add('show');
         }
         
@@ -42,7 +43,7 @@ function App(){
             </div>
             <section class="error">
                     <span>&#9888;</span>
-                    <p>Unable to retrieve data at this time. Please try again later.</p>
+                    <p>Loading</p>
                 </section>
         </main>
 
