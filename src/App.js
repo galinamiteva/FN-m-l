@@ -11,11 +11,16 @@ function App(){
     const[page, setPage] = useState('');
 
     useEffect(async () => {
-        const response = await fetch('https://unstats.un.org/SDGAPI/v1/sdg/Goal/List?includechildren=true');
+        try{
+            const response = await fetch('https://unstats.un.org/SDGAPI/v1/sdg/Goal/List?includechildren=true');
         const data = await response.json();  
         
         setLists(data);
-        
+        }
+        catch (error){
+            console.log(error)
+            document.querySelector('.error').classList.add('show');
+        }
         
     }, []);
 
@@ -35,6 +40,10 @@ function App(){
                 }): <Goal goal={page}  close={comeBack}/>
                 }
             </div>
+            <section class="error">
+                    <span>&#9888;</span>
+                    <p>Unable to retrieve data at this time. Please try again later.</p>
+                </section>
         </main>
 
     )
