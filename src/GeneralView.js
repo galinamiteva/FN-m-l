@@ -1,7 +1,7 @@
 import React from 'react';
 import './GeneralView.css';
 
-function GeneralView(props){
+function GeneralView(props){  //props = func moreInfo ,  goal={list} och key
    function moreInfo(){
        props.moreInfo(props.goal)
    }

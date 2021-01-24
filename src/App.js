@@ -19,7 +19,6 @@ function App(){
         }
         catch (error){
             console.log(error)
-            
             document.querySelector('.error').classList.add('show');
         }
         
@@ -36,14 +35,17 @@ function App(){
             </section>
             <div id='goals'>  
                 {
-                page ===''? lists.map((list, index)=>{
+                page? 
+                <Goal goal={page}  close={comeBack} key={page.code}/> :
+                
+                lists.map((list, index)=>{
                     return <GeneralView goal={list}   moreInfo={setPage} key={index}/>
-                }): <Goal goal={page}  close={comeBack} key={page.code}/>
+                }) 
                 }
             </div>
             <section className="error">
                     <span>&#9888;</span>
-                    <p>Loading</p>
+                    <p>Loading.....</p>
                 </section>
         </main>
 

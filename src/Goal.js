@@ -1,13 +1,13 @@
 import React from 'react';
 import './Goal.css';
 
-function Goal(props){
+function Goal(props){   //props=func close och goal={page}
     function close(){
-        props.close(props.close)
+        props.close(props.goal)
    }
 
    return(
-    <section className='overlay show'>
+    <section className='overlay show' >
         <div className='overlay-info'>
 
             <h1 className='overlay-info-header'>{props.goal.code}</h1>
